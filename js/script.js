@@ -62,10 +62,11 @@ const winFunction=(letter)=>{
     newBtn();
     if(letter=='X'){
         messageRef.innerHTML = `🎉 <br/> Player 'X' wins!`;
-
+        cnt=0;
     }
     else{
         messageRef.innerHTML = `🎉 <br/> Player 'O' wins!`;
+        cnt=0;
     }
 }
 
@@ -101,7 +102,8 @@ btnRef.forEach((element)=>{
         }
         cnt+=1
         if(cnt==9){
-            drawfunction()
+            drawfunction();
+            cnt=0;
         }
         winCheck();
         
