@@ -40,6 +40,7 @@ const restartFunction= ()=>{
         })
         messageRef.innerHTML = '';
         xturn = true;
+        cnt=0;
     })
 }
 
